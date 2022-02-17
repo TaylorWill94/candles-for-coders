@@ -14,8 +14,6 @@ app.get("/", (req, res) => {
   res.send("Hello, world!");
 });
 
-const
-
 /////////////////////////////////////
 // REMOVE AFTER SUCCESSFUL DEPLOYMENT
 /////////////////////////////////////

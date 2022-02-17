@@ -1,11 +1,17 @@
-DROP DATABASE IF EXISTS cta_dev;
-CREATE DATABASE cta_dev;
+DROP DATABASE IF EXISTS candles_dev;
+CREATE DATABASE candles_dev;
 
-\c cta_dev;
+\c candles_dev;
 
-DROP TABLE IF EXISTS test;
+DROP TABLE IF EXISTS candles;
 
-CREATE TABLE test (
+CREATE TABLE candles (
     id SERIAL PRIMARY KEY, 
-    name TEXT
+    name TEXT,
+    description TEXT,
+    price INT,
+    rating INT NOT NULL,
+    CHECK (rating >=0 AND rating <= 5),
+    featured BOOLEAN
+
 );

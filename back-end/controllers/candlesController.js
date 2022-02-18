@@ -1,10 +1,10 @@
 const express = require("express");
-const candles = express.Router();
 const { getAllCandles } = require("../queries/candles");
+const candles = express.Router();
 
 candles.get("/", async (req, res) => {
-  const candles = await getAllCandles();
-  res.status(200).json(candles);
+  const candle = await getAllCandles();
+  res.status(200).json(candle);
 });
 
 module.exports = candles;

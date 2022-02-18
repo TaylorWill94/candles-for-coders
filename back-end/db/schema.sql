@@ -11,7 +11,15 @@ CREATE TABLE candles (
     description TEXT,
     price INT,
     rating INT NOT NULL,
-    CHECK (rating >=0 AND rating <= 5),
     featured BOOLEAN
 
 );
+
+-- DROP TABLE IF EXISTS dogs;
+
+-- CREATE TABLE dogs (
+--     id SERIAL PRIMARY KEY, 
+--     name TEXT,
+--     featured BOOLEAN
+
+-- );

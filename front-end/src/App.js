@@ -8,7 +8,8 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <div className="App">
+      <h1>CERTIFIED LOVER CANDLES</h1>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />

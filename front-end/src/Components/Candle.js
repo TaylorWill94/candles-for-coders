@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 
 function Candle({ candle, id }) {
   return (
-    <div>
-      Enjoy linux, I'm good.
-      {candle.name}
-      <Link to="/candles/:id">More Details</Link>
+    <div className="candle">
+      <div>{candle.name}</div>
+      <p>${candle.price.toFixed(2)}</p>
+      <p>
+        <Link to="/candles/:id">More Details</Link>
+      </p>
     </div>
   );
 }

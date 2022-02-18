@@ -12,7 +12,7 @@ function Candles() {
 
   return (
     <div className="candles">
-      <header>CANDLES FOR CODERS</header>
+      <h1>CANDLES FOR CODERS</h1>
       {candles.map((candle, id) => {
         return <Candle key={id} candle={candle} />;
       })}

@@ -8,13 +8,12 @@ function CandleDetails() {
   const [candle, setCandle] = useState({});
 
   useEffect(() => {
-    console.log(id);
     axios
       .get(`${API}/candles/${id}`)
       .then((response) => setCandle(response.data))
       .catch((error) => console.warn(error));
   }, [id, API]);
-  console.log(candle);
+
   return (
     <div className="candle">
       The best scent of 2022

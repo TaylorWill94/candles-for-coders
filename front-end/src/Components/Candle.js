@@ -6,7 +6,7 @@ function Candle({ candle, id }) {
       <div>{candle.name}</div>
       <p>${candle.price.toFixed(2)}</p>
       <p>
-        <Link to="/candles/:id">More Details</Link>
+        <Link to={`/candles/${id}`}>More Details</Link>
       </p>
     </div>
   );

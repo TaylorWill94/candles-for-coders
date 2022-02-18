@@ -13,8 +13,8 @@ function Candles() {
   return (
     <div className="candles">
       <h1>CANDLES FOR CODERS</h1>
-      {candles.map((candle, id) => {
-        return <Candle key={id} candle={candle} />;
+      {candles.map((candle, i) => {
+        return <Candle key={i} candle={candle} id={candle.id} />;
       })}
     </div>
   );

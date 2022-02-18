@@ -8,6 +8,7 @@ function CandleDetails() {
   const [candle, setCandle] = useState({});
 
   useEffect(() => {
+    console.log(id);
     axios
       .get(`${API}/candles/${id}`)
       .then((response) => setCandle(response.data))

@@ -31,6 +31,10 @@ function CandleDetails() {
       <p>
         <button>Delete</button>
       </p>
+      <div>
+        <h2>REVIEWS</h2>
+        <p>Beyonce: My favorite candle ⭐️⭐️⭐️⭐️⭐️</p>
+      </div>
     </div>
   );
 }

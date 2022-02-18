@@ -1,5 +1,11 @@
+import CandleDetails from "../Components/CandleDetails";
+
 function Show() {
-  return <div></div>;
+  return (
+    <div>
+      <CandleDetails />
+    </div>
+  );
 }
 
 export default Show;

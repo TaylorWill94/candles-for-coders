@@ -9,8 +9,12 @@ function NavBar() {
       <Link to="/candles">
         <h1>shop</h1>
       </Link>
-      <h1>contact</h1>
-      <h1>about</h1>
+      <Link to="/contact">
+        <h1>contact</h1>
+      </Link>
+      <Link to="/about">
+        <h1>about</h1>
+      </Link>
       <h1>search</h1>
     </nav>
   );

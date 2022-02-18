@@ -1,6 +1,8 @@
 const db = require("../db/dbConfig.js");
 
 const getAllCandles = async () => {
+  console.log("Step 2");
+  console.log(db);
   try {
     const allCandles = await db.any("SELECT * FROM candles");
     console.log(allCandles);
@@ -51,19 +53,20 @@ const deleteCandle = async (id) => {
 };
 
 const editCandle = async (id, candle) => {
+  console.log(id, candle);
   try {
     const updatedCandle = await db.one(
-      "UPDATE candles SET name=$1, description=$2, price=$3, rating=$4, favorite=$5 WHERE id=$6 RETURNING *",
+      "UPDATE candles SET name=$1, description=$2, price=$3, rating=$4, featured=$5 WHERE id=$6 RETURNING *",
       [
         candle.name,
         candle.description,
         candle.price,
         candle.rating,
-        candle.favorite,
+        candle.featured,
         id,
       ]
     );
-    console.log(updatedCandles);
+    console.log(updatedCandle);
     return updatedCandle;
   } catch (err) {
     return err;

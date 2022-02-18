@@ -9,6 +9,7 @@ const {
 const candles = express.Router();
 
 candles.get("/", async (req, res) => {
+  console.log("Step 1");
   const candle = await getAllCandles();
   res.status(200).json(candle);
 });
@@ -57,7 +58,7 @@ candles.delete("/:id", async (req, res) => {
 
 candles.put("/:id", async (request, response) => {
   try {
-    const updatedCandle = await editCandle(request.body, request.params.id);
+    const updatedCandle = await editCandle(request.params.id, request.body);
     response.status(200).json(updatedCandle);
   } catch (error) {
     response.status(400).json({ err: "Sorry buddy" });

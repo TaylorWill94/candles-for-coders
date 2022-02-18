@@ -6,12 +6,15 @@ import Edit from "./Pages/Edit";
 import New from "./Pages/New";
 import Contact from "./Components/Contact";
 import About from "./Components/About";
-import { Routes, Route } from "react-router-dom";
+import { Link, Routes, Route } from "react-router-dom";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="app-header">CERTIFIED LOVER CANDLES</h1>
+      <Link to="/">
+        <h1 className="app-header">CERTIFIED LOVER CANDLES</h1>
+      </Link>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,6 +25,7 @@ function App() {
         <Route path="/candles/:id/edit" element={<Edit />} />
         <Route path="/candles/new" element={<New />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

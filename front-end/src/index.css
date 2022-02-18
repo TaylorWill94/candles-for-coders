@@ -7,3 +7,16 @@
 .app-header {
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.nav {
+  grid-column: 1 span / 3;
+}

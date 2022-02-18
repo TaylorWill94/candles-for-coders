@@ -8,6 +8,7 @@ function Home() {
         HANDCRAFTED FOR THOSE WHO LOVE TO CODE. CODING SHOULDN’T BE STRESSFUL.
         LIGHT A CANDLE AND RELAX.
         <br />
+        <br />
         HAND POURED IN BROOKLYN.
       </p>
     </div>

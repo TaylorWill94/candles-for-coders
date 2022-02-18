@@ -15,6 +15,9 @@ function NavBar() {
       <Link to="/about">
         <h1>about</h1>
       </Link>
+      <Link to="/candles/new">
+        <h1>create your own candle</h1>
+      </Link>
       <h1>search</h1>
     </nav>
   );

@@ -32,14 +32,35 @@ candles.delete("/:id", async (req, res) => {
   }
 });
 
+// candles.put("/:id", async (request, response) => {
+//   const { id } = request.params;
+//   const candle = request.body;
+//   try {
+//     const updateCandle = await editCandle(id, candle);
+//     response.status(200).json(updateCandle);
+//   } catch (error) {
+//     return error;
+//   }
+// });
+
+// candles.put("/:id", async (req, res) => {
+//   const { id } = req.params;
+//   const candleBody = req.body;
+//   const candle = await editCandle(id, candleBody);
+//   if (candle) {
+//     console.log("TeeHee");
+//     res.status(200).json(candle);
+//   } else {
+//     res.status(404).json({ error: "you cannot update this candle." });
+//   }
+// });
+
 candles.put("/:id", async (request, response) => {
-  const { id } = request.params;
-  const candle = request.body;
   try {
-    const updateCandle = await editCandle(candle, id);
-    response.status(200).json(updateCandle);
+    const updatedCandle = await editCandle(request.body, request.params.id);
+    response.status(200).json(updatedCandle);
   } catch (error) {
-    return error;
+    response.status(400).json({ err: "Sorry buddy" });
   }
 });
 

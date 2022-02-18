@@ -1,6 +1,12 @@
-DROP TABLE IF EXISTS test;
+DROP TABLE IF EXISTS candles;
 
-CREATE TABLE test (
+CREATE TABLE candles (
     id SERIAL PRIMARY KEY, 
-    name TEXT
+    name TEXT,
+    description TEXT,
+    price INT,
+    rating INT,
+    CHECK (rating >= 0 AND rating <= 5),
+    featured BOOLEAN
+
 );

@@ -9,8 +9,8 @@ CREATE TABLE candles (
     id SERIAL PRIMARY KEY, 
     name TEXT,
     description TEXT,
-    price INT NOT NULL,
-    rating INT NOT NULL,
+    price INT,
+    rating INT,
     CHECK (rating >= 0 AND rating <= 5),
     featured BOOLEAN
 

@@ -7,7 +7,7 @@ function Candles() {
   const [candles, setCandles] = useState([]);
 
   useEffect(() => {
-    axios.get(`${API}/test`).then((response) => setCandles(response.data));
+    axios.get(`${API}/candles`).then((response) => setCandles(response.data));
   }, [API]);
 
   return (

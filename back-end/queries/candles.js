@@ -52,16 +52,36 @@ const deleteCandle = async (id) => {
 
 const editCandle = async (id, candle) => {
   try {
-    const { name, description, price, rating, favorite } = candle;
-    const editedCandle = await db.one(
-      "UPDATE candles SET name=$2, description=$3, price=$4, rating=$5, favorite=$6 WHERE id=$1 RETURNING *",
-      [id, name, description, price, rating, favorite]
+    const updatedCandle = await db.one(
+      "UPDATE candles SET name=$1, description=$2, price=$3, rating=$4, favorite=$5 WHERE id=$6 RETURNING *",
+      [
+        candle.name,
+        candle.description,
+        candle.price,
+        candle.rating,
+        candle.favorite,
+        id,
+      ]
     );
-    return editedCandle;
-  } catch (error) {
-    return error;
+    console.log(updatedCandles);
+    return updatedCandle;
+  } catch (err) {
+    return err;
   }
 };
+
+// const editCandle = async (id, candle) => {
+//   try {
+//     const { name, description, price, rating, favorite } = candle;
+//     const editedCandle = await db.one(
+//       "UPDATE candles SET name=$2, description=$3, price=$4, rating=$5, favorite=$6 WHERE id=$1 RETURNING *",
+//       [id, name, description, price, rating, favorite]
+//     );
+//     return editedCandle;
+//   } catch (error) {
+//     return error;
+//   }
+// };
 
 module.exports = {
   getAllCandles,

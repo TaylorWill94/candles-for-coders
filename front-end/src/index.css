@@ -24,6 +24,10 @@ h2 {
   margin: 10px;
 }
 
+h3 {
+  padding: 50px;
+}
+
 .home {
   grid-row: 3;
   grid-column: 1 / 4;
@@ -31,15 +35,19 @@ h2 {
 }
 
 .blue {
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 500px;
+  margin: 10px;
   border: 1px solid rgb(0, 0, 0);
   background-color: #78c6ff;
 }
 
 .pink {
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 500px;
+  margin: 10px;
+  position: relative;
+  left: 50%;
   border: 1px solid rgb(0, 0, 0);
   background-color: #ffd4f1;
 }
@@ -54,6 +62,13 @@ h2 {
   grid-row: 3;
   grid-column: 1 / 4;
   text-align: center;
+}
+
+.product {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  border: 1px solid black;
 }
 
 .edit {

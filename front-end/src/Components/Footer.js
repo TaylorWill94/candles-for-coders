@@ -6,6 +6,9 @@ function Footer() {
       <Link to="/contact">
         <h2>Contact</h2>
       </Link>
+      <br />
+      <br />
+      <br />
     </div>
   );
 }

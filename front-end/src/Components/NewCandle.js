@@ -41,6 +41,8 @@ function NewCandle() {
 
   return (
     <div className="new-form">
+      <br />
+      <br />
       <h1>CREATE YOUR OWN CANDLE</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">NAME:</label>

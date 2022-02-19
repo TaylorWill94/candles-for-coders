@@ -42,6 +42,8 @@ function EditCandle() {
 
   return (
     <div className="edit">
+      <br />
+      <br />
       <h1>Edit</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">NAME:</label>

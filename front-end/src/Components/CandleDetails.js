@@ -16,6 +16,8 @@ function CandleDetails() {
 
   return (
     <div className="candle">
+      <br />
+      <br />
       The best scent of 2022
       <br />
       <br />

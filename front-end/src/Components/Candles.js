@@ -8,7 +8,7 @@ function Candles() {
 
   useEffect(() => {
     axios.get(`${API}/candles`).then((response) => setCandles(response.data));
-  }, []);
+  }, [API]);
 
   return (
     <div className="candles">

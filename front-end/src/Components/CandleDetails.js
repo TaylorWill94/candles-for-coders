@@ -17,14 +17,18 @@ function CandleDetails() {
   return (
     <div className="candle">
       The best scent of 2022
+      <br />
+      <br />
       <div>{candle.name}</div>
+      <br />
+      <div>{candle.description}</div>
       <p>
         <Link to="/candles">
           <button>Back</button>
         </Link>
       </p>
       <p>
-        <Link to="/candles/:id/edit">
+        <Link to={`/candles/${id}/edit`}>
           <button>Edit</button>
         </Link>
       </p>

@@ -2,7 +2,7 @@ import EditCandle from "../Components/EditCandle";
 
 function Edit() {
   return (
-    <div>
+    <div className="edit">
       <EditCandle />
     </div>
   );

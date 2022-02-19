@@ -2,7 +2,7 @@ import Candles from "../Components/Candles";
 
 function Index() {
   return (
-    <div>
+    <div className="index">
       <Candles />
     </div>
   );

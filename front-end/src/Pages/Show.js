@@ -2,7 +2,7 @@ import CandleDetails from "../Components/CandleDetails";
 
 function Show() {
   return (
-    <div>
+    <div className="show">
       <CandleDetails />
     </div>
   );

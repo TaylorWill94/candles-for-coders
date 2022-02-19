@@ -1,7 +1,11 @@
 function Home() {
   return (
-    <div>
+    <div className="home">
+      <br />
+      <br />
       <h1>CANDLES FOR CODERS</h1>
+      <div className="blue"></div>
+      <div className="pink"></div>
       <p>
         CANDLES MADE FOR CODERS.
         <br />

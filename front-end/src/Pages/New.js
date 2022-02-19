@@ -2,7 +2,7 @@ import NewCandle from "../Components/NewCandle";
 
 function New() {
   return (
-    <div>
+    <div className="new">
       <NewCandle />
     </div>
   );

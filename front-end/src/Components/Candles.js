@@ -12,7 +12,11 @@ function Candles() {
 
   return (
     <div className="candles">
+      <br />
+      <br />
       <h1>CANDLES FOR CODERS</h1>
+      <br />
+      <br />
       {candles.map((candle, i) => {
         return <Candle key={i} candle={candle} id={candle.id} />;
       })}

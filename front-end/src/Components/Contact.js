@@ -6,6 +6,8 @@ function Contact() {
       <h1>CONTACT US</h1>
       <br />
       <div className="blue"></div>
+      <br />
+      <br />
     </div>
   );
 }

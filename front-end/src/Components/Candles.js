@@ -20,6 +20,8 @@ function Candles() {
       {candles.map((candle, i) => {
         return <Candle key={i} candle={candle} id={candle.id} />;
       })}
+      <br />
+      <br />
     </div>
   );
 }

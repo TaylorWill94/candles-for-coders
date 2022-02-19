@@ -97,6 +97,8 @@ function NewCandle() {
         <br />
         <input type="submit" />
       </form>
+      <br />
+      <br />
     </div>
   );
 }

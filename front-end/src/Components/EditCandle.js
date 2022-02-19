@@ -98,6 +98,8 @@ function EditCandle() {
         <br />
         <input type="submit" />
       </form>
+      <br />
+      <br />
     </div>
   );
 }

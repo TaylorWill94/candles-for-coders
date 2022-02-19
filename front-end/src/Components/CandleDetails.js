@@ -41,6 +41,8 @@ function CandleDetails() {
         <h2>REVIEWS</h2>
         <p>Beyonce: My favorite candle ⭐️⭐️⭐️⭐️⭐️</p>
       </div>
+      <br />
+      <br />
     </div>
   );
 }

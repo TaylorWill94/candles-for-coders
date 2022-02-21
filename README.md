@@ -1,4 +1,6 @@
-https://candles-for-coders.herokuapp.com/
+Frontend: https://certifiedlovercandles.netlify.app/
+
+Backend: https://candles-for-coders.herokuapp.com/
 
 # PERN Final Project Template
 

@@ -1,10 +1,11 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 function CandleDetails() {
   const { id } = useParams();
   const API = process.env.REACT_APP_API_URL;
+  let navigate = useNavigate();
   const [candle, setCandle] = useState({});
 
   useEffect(() => {
@@ -13,6 +14,12 @@ function CandleDetails() {
       .then((response) => setCandle(response.data))
       .catch((error) => console.warn(error));
   }, [id, API]);
+
+  const handleDelete = () => {
+    axios.delete(`${API}/candles/${id}`).then(() => {
+      navigate("/candles");
+    });
+  };
 
   return (
     <div className="candle">
@@ -35,7 +42,7 @@ function CandleDetails() {
         </Link>
       </p>
       <p>
-        <button>Delete</button>
+        <button onClick={handleDelete}>Delete</button>
       </p>
       <div>
         <h2>REVIEWS</h2>

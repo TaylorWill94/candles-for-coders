@@ -322,6 +322,334 @@ a {
   }
 }
 
+@media screen and (min-width: 390px) {
+  .App {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .app-header {
+    text-align: center;
+  }
+  .nav {
+    grid-row: 2;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 14px;
+  }
+
+  h2 {
+    display: inline;
+    margin: 10px;
+  }
+
+  h3 {
+    padding: 50px;
+    font-size: 12px;
+  }
+
+  .home {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .blue {
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #78c6ff;
+  }
+
+  .pink {
+    width: 260px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    left: 12%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #ffd4f1;
+  }
+
+  .index {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .show {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .product {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border: 1px solid black;
+  }
+
+  .edit {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .new {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .about {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .contact {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+  .footer {
+    grid-row: 4;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .App {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .app-header {
+    text-align: center;
+  }
+  .nav {
+    grid-row: 2;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    display: inline;
+    margin: 10px;
+  }
+
+  h3 {
+    padding: 50px;
+    font-size: 16px;
+  }
+
+  .home {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .blue {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #78c6ff;
+  }
+
+  .pink {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+    left: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #ffd4f1;
+  }
+
+  .index {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .show {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .product {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border: 1px solid black;
+  }
+
+  .edit {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .new {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .about {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .contact {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+  .footer {
+    grid-row: 4;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 775px) {
+  .App {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid black;
+  }
+
+  .app-header {
+    text-align: center;
+  }
+  .nav {
+    grid-row: 2;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    display: inline;
+    margin: 10px;
+  }
+
+  h3 {
+    padding: 50px;
+    font-size: 16px;
+  }
+
+  .home {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .blue {
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #78c6ff;
+  }
+
+  .pink {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+    left: 45%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #ffd4f1;
+  }
+
+  .index {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .show {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .product {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border: 1px solid black;
+  }
+
+  .edit {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .new {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .about {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .contact {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+  .footer {
+    grid-row: 4;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
 @media screen and (min-width: 798px) {
   .App {
     display: grid;
@@ -369,7 +697,117 @@ a {
 
   .pink {
     width: 400px;
-    height: 200px;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+    left: 45%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #ffd4f1;
+  }
+
+  .index {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .show {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .product {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border: 1px solid black;
+  }
+
+  .edit {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .new {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .about {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .contact {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+  .footer {
+    grid-row: 4;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .App {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid black;
+  }
+
+  .app-header {
+    text-align: center;
+  }
+  .nav {
+    grid-row: 2;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    display: inline;
+    margin: 10px;
+  }
+
+  h3 {
+    padding: 50px;
+    font-size: 16px;
+  }
+
+  .home {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .blue {
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #78c6ff;
+  }
+
+  .pink {
+    width: 400px;
+    height: 300px;
     margin: 10px;
     position: relative;
     left: 45%;
@@ -536,6 +974,117 @@ a {
     grid-column: 1 / 4;
     text-align: center;
     font-size: 12px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1278px) {
+  .App {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  .app-header {
+    text-align: center;
+  }
+  .nav {
+    grid-row: 2;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    display: inline;
+    margin: 10px;
+  }
+
+  h3 {
+    padding: 50px;
+    font-size: 22px;
+  }
+
+  .home {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .blue {
+    width: 600px;
+    height: 500px;
+    margin: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #78c6ff;
+  }
+
+  .pink {
+    width: 600px;
+    height: 500px;
+    margin: 10px;
+    position: relative;
+    left: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #ffd4f1;
+  }
+
+  .index {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .show {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .product {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border: 1px solid black;
+  }
+
+  .edit {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .new {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .about {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .contact {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+  .footer {
+    grid-row: 4;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 14px;
   }
 
   a {

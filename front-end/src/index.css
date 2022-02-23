@@ -448,12 +448,13 @@ a {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   h2 {
     display: inline;
-    margin: 10px;
+    margin: 5px;
+    font-size: 12px;
   }
 
   h3 {
@@ -480,7 +481,7 @@ a {
     height: 300px;
     margin: 10px;
     position: relative;
-    left: 50%;
+    left: 45%;
     border: 1px solid rgb(0, 0, 0);
     background-color: #ffd4f1;
   }
@@ -784,6 +785,7 @@ a {
   h2 {
     display: inline;
     margin: 10px;
+    font-size: 24px;
   }
 
   h3 {
@@ -895,6 +897,7 @@ a {
   h2 {
     display: inline;
     margin: 10px;
+    font-size: 20px;
   }
 
   h3 {
@@ -996,7 +999,7 @@ a {
     grid-row: 2;
     grid-column: 1 / 4;
     text-align: center;
-    font-size: 18px;
+    font-size: 32px;
   }
 
   h1 {
@@ -1006,6 +1009,7 @@ a {
   h2 {
     display: inline;
     margin: 10px;
+    font-size: 28px;
   }
 
   h3 {

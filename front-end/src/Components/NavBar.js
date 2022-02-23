@@ -24,6 +24,9 @@ function NavBar() {
         <h2>create your own candle</h2>
       </Link>
       <h2>search</h2>
+      <Link to="/cart">
+        <h2>cart</h2>
+      </Link>
     </nav>
   );
 }

@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-h2 {
+.nav-link {
   display: inline;
   margin: 10px;
 }
@@ -130,7 +130,7 @@ a {
     font-size: 12px;
   }
 
-  h2 {
+  .nav-link {
     display: inline;
     margin: 10px;
   }
@@ -239,7 +239,7 @@ a {
     font-size: 12px;
   }
 
-  h2 {
+  .nav-link {
     display: inline;
     margin: 10px;
   }
@@ -348,7 +348,7 @@ a {
     font-size: 14px;
   }
 
-  h2 {
+  .nav-link {
     display: inline;
     margin: 10px;
   }
@@ -457,7 +457,7 @@ a {
     font-size: 14px;
   }
 
-  h2 {
+  .nav-link {
     display: inline;
     margin: 10px;
   }
@@ -566,7 +566,7 @@ a {
     font-size: 20px;
   }
 
-  h2 {
+  .nav-link {
     display: inline;
     margin: 5px;
     font-size: 12px;
@@ -677,7 +677,7 @@ a {
     font-size: 22px;
   }
 
-  h2 {
+  .nav-link {
     display: inline;
     margin: 10px;
   }
@@ -787,7 +787,7 @@ a {
     font-size: 22px;
   }
 
-  h2 {
+  .nav-link {
     display: inline;
     margin: 10px;
   }
@@ -897,7 +897,7 @@ a {
     font-size: 22px;
   }
 
-  h2 {
+  .nav-link {
     display: inline;
     margin: 10px;
     font-size: 24px;
@@ -1009,7 +1009,7 @@ a {
     font-size: 22px;
   }
 
-  h2 {
+  .nav-link {
     display: inline;
     margin: 10px;
     font-size: 20px;
@@ -1121,7 +1121,7 @@ a {
     font-size: 30px;
   }
 
-  h2 {
+  .nav-link {
     display: inline;
     margin: 10px;
     font-size: 28px;

@@ -1,4 +1,5 @@
 import axios from "axios";
+import Button from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
@@ -33,9 +34,14 @@ function CandleDetails() {
       </div>
       <br />
       <div>{candle.description}</div>
+      <br />
+      <br />
+      <div>${candle.price.toFixed(2)}</div>
+      <br />
+      <br />
       <p>
         <Link to="/candles">
-          <button>Back</button>
+          <button className="btn btn-primary">Back</button>
         </Link>
       </p>
       <p>
@@ -51,6 +57,10 @@ function CandleDetails() {
       <p>
         <button onClick={handleDelete}>Delete</button>
       </p>
+      <br />
+      <br />
+      <br />
+      <br />
       <div>
         <h2>REVIEWS</h2>
         <p>Beyonce: My favorite candle ⭐️⭐️⭐️⭐️⭐️</p>

@@ -1,13 +1,11 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import Cart from "./Cart";
 
 function CandleDetails() {
   const { id } = useParams();
   const API = process.env.REACT_APP_API_URL;
   let navigate = useNavigate();
-  const [addCandle, setAddCandle] = useState([]);
   const [candle, setCandle] = useState({});
 
   useEffect(() => {
@@ -23,20 +21,16 @@ function CandleDetails() {
     });
   };
 
-  const addProduct = (candle) => {
-    setAddCandle([...addCandle, candle.name]);
-  };
-
-  console.log(addCandle);
-
   return (
     <div className="candle">
       <br />
       <br />
-      The best scent of 2022
+      <h1>The best scent of 2022</h1>
       <br />
       <br />
-      <div>{candle.name}</div>
+      <div>
+        <h2>{candle.name}</h2>
+      </div>
       <br />
       <div>{candle.description}</div>
       <p>
@@ -51,7 +45,7 @@ function CandleDetails() {
       </p>
       <p>
         {/* <Link to="/cart"> */}
-        <button onClick={() => addProduct(candle)}>Add To Cart</button>
+        <button>Add To Cart</button>
         {/* </Link> */}
       </p>
       <p>
@@ -63,9 +57,6 @@ function CandleDetails() {
       </div>
       <br />
       <br />
-      <h1>Cart:</h1>
-      <br />
-      {addCandle}
       <br />
       <br />
     </div>
